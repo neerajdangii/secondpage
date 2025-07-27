@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Assign</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      background-color: white;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      z-index: 1000;
+    }
+
+    .logo img {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 25px;
+      justify-content: center;
+      flex-grow: 1;
+    }
+
+    .nav-links a {
+      color: rgb(19, 4, 4);
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 18px;
+    }
+
+    .nav-links a:hover {
+      color: #ffd700;
+    }
+
+    .form input {
+      padding: 6px 15px;
+      border-radius: 12px;
+      border: none;
+      background-color: #f0f8ff;
+      color: #1e90ff;
+      font-weight: bold;
+    }
+
+    .hero-section {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 120px 60px 60px 60px;
+      gap: 50px;
+    }
+
+    .left {
+      max-width: 50%;
+    }
+
+    .left h1 {
+      font-size: 36px;
+      color: #0f1518;
+      line-height: 1.4;
+    }
+
+    .left h1 span {
+      color: rgb(43, 139, 236);
+    }
+
+    .left p {
+      font-size: 18px;
+      line-height: 1.6;
+      margin-top: 10px;
+      color: #555;
+    }
+
+    .left button {
+      margin-top: 25px;
+      padding: 15px 30px;
+      background-color: #009dff;
+      border: none;
+      border-radius: 12px;
+      color: white;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .left button:hover {
+      background-color: #007acc;
+    }
+
+    .right img {
+      width: 100%;
+      max-width: 400px;
+      height: auto;
+      border-radius: 10px;
+    }
+
+    @media (max-width: 768px) {
+      .hero-section {
+        flex-direction: column;
+        text-align: center;
+        padding: 100px 20px;
+      }
+
+      .left, .right {
+        max-width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="navbar">
+    <div class="logo">
+      <img src="https://imgs.search.brave.com/KllFcF1D70jrhZDjK-_iFS0sIT291IRXMwb7cOMbhnk/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9pLnBp/bmltZy5jb20vb3Jp/Z2luYWxzL2FkLzRm/Lzc1L2FkNGY3NTQw/ZWY3YzFjZjc5NDAw/Y2E5ZjVjNzNhMjAy/LmpwZw" alt="Logo">
+    </div>
+    <div class="nav-links">
+      <a href="#">Home</a>
+      <a href="#">Services</a>
+      <a href="#">About Us</a>
+      <a href="#">Contact Us</a>
+    </div>
+    <div class="form">
+      <input type="text" placeholder="Username" />
+    </div>
+  </div>
+
+  <div class="hero-section">
+    <div class="left">
+      <h1>Revitalize Your<br>Clothes with Expert<br><span>Laundry Services!</span></h1>
+      <p>From premium dry cleaning to swift wash and fold, we<br>deliver care and convenience. Schedule a pickup and<br>rediscover the freshness of your clothes today!</p>
+      <button>Book a service today!</button>
+    </div>
+    <div class="right">
+      <img src="https://imgs.search.brave.com/GDvpF29B7Jys3fs3Vy67qEhl-1eYqHxUJPbHQDsKbOM/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly90aHVt/YnMuZHJlYW1zdGlt/ZS5jb20vYi93YXNo/aW5nLW1hY2hpbmUt/Y2xlYW4tY29uY2Vw/dC1kLXJlbmRlci01/NjE3MjM3NC5qcGc" alt="Laundry Image" />
+    </div>
+  </div>
+
+</body>
+</html>
